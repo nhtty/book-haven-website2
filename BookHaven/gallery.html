@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven Bookstore | Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+</body>
+<body>
+
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Book Haven Bookstore Logo" width="70" />
+      </a>
+      <h1>Gallery</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html" aria-current="page">Gallery</a> |
+      <a href="about.html">About Us / Contact</a> |
+      <a href="events.html">Events</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section>
+      <h2>Featured Books</h2>
+      <p>Select an item below to add it to your cart (buttons are placeholders for Task 3).</p>
+
+      <table border="1" cellpadding="10">
+        <tr>
+          <td align="center">
+            <img src="images/book1.png" alt="Book 1 cover" width="160" /><br />
+            <strong>Book Title 1</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart"data-item="Book Title 1">Add to Cart</button>
+          </td>
+
+          <td align="center">
+            <img src="images/book2.png" alt="Book 2 cover" width="160" /><br />
+            <strong>Book Title 2</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart" data-item="Book Title 2">Add to Cart</button>
+          </td>
+
+          <td align="center">
+            <img src="images/book3.png" alt="Book 3 cover" width="160" /><br />
+            <strong>Book Title 3</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart" data-item="Book Title 3">Add to Cart</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center">
+            <img src="images/book4.png" alt="Book 4 cover" width="160" /><br />
+            <strong>Book Title 4</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart" data-item="Book Title 4">Add to Cart</button>
+          </td>
+
+          <td align="center">
+            <img src="images/book5.png" alt="Book 5 cover" width="160" /><br />
+            <strong>Book Title 5</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart" data-item="Book Title 5">Add to Cart</button>
+          </td>
+
+          <td align="center">
+            <img src="images/book6.png" alt="Book 6 cover" width="160" /><br />
+            <strong>Book Title 6</strong><br />
+            <small>Short description text</small><br /><br />
+            <button type="button" class="add-to-cart" data-item="Book Title 6">Add to Cart</button>
+          </td>
+        </tr>
+      </table>
+      <button id="viewCartBtn">View Cart</button>
+
+<div id="cartModal" style="display:none; border:1px solid #ccc; padding:15px; margin-top:20px;">
+  <h2>Shopping Cart</h2>
+  <ul id="cartItems"></ul>
+
+  <button id="clearCartBtn">Clear Cart</button>
+  <button id="processOrderBtn">Process Order</button>
+</div>
+      <div>
+</div>
+ <button type="button" id="clearCartBtn">Clear Cart</button>
+  <button type="button" id="processOrderBtn">Process Order</button>
+    </section>
+  </main>
+  <footer>
+    <button type="button" id="subscribeBtn">Subscribe</button>
+    <hr />
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About Us / Contact</a> |
+      <a href="events.html">Events</a>
+    </nav>
+    <p>Social Media Icons (Placeholder)</p>
+    <p>&copy; 2026 Book Haven Bookstore</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven Bookstore | About Us / Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Book Haven Bookstore Logo" width="70" />
+      </a>
+      <h1>About Us / Contact</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html" aria-current="page">About Us / Contact</a> |
+      <a href="events.html">Events</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section>
+      <h2>About Book Haven</h2>
+      <p>
+        Book Haven Bookstore is an independent bookstore focused on building a strong reading community.
+        We host local events, support new readers, and offer recommendations for every genre.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> (Add store address)</p>
+      <p><strong>Phone:</strong> (Add phone number)</p>
+      <p><strong>Email:</strong> (Add email address)</p>
+    </section>
+
+    <section>
+      <h2>Contact Us Form</h2>
+
+      <!-- ONE form only (no nesting) -->
+      <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input id="name" name="name" type="text" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input id="email" name="email" type="email" required><br><br>
+
+        <label for="message">Feedback / Custom Order Information:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <input id="customOrder" name="customOrder" type="checkbox">
+        <label for="customOrder">Custom Order</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear Form</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About Us / Contact</a> |
+      <a href="events.html">Events</a>
+    </nav>
+
+    <p>Subscribe for updates:</p>
+    <button type="button" id="subscribeBtn">Subscribe</button>
+
+    <p>Social Media Icons (Placeholder)</p>
+    <p>&copy; 2026 Book Haven Bookstore</p>
+  </footer>
+
+  <!-- Script ALWAYS goes right before closing body -->
+  <script src="script.js"></script>
+</body>
+</html>

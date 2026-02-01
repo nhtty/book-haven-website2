@@ -1,0 +1,174 @@
+/* Book Haven Bookstore - Touchstone 2.2 External CSS */
+
+/* 1) Base + typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* Typography Option 2 vibe: clean, readable */
+  color: #2b2b2b; /* Font Color 2 (dark neutral, not pure black) */
+  background: #f7f7f7;
+  line-height: 1.6;
+}
+
+a {
+  color: #2b2b2b;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #444;
+  outline-offset: 2px;
+}
+
+/* 2) Layout wrappers */
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 3) Header + nav */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+header img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+  font-size: 1.6rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #eaeaea;
+}
+
+nav a[aria-current="page"] {
+  background: #2b2b2b;
+  color: #ffffff;
+}
+
+/* 4) Main content cards / sections */
+section,
+article {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* 5) Buttons */
+button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #2b2b2b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #111;
+}
+
+/* 6) Gallery table improvements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #e5e5e5;
+  vertical-align: top;
+  padding: 14px;
+}
+
+td img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* 7) Form styling */
+form {
+  max-width: 650px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  margin-top: 6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 8) Footer */
+footer {
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+/* 9) Responsive Web Design (basic) */
+@media (max-width: 768px) {
+  header,
+  main,
+  footer {
+    padding: 12px;
+  }
+
+  header h1 {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
